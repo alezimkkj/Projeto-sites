@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_diferencial.css">
 </head>
 <body>
     <!-- HEADER + HERO — dono: gerente -->
@@ -18,26 +19,69 @@
     <section id="cardapio"></section>
 
     <!-- DIFERENCIAIS + DEPOIMENTOS — dono: colega 2 -->
-    <section id="diferenciais">
+    <section id="diferenciais" class="diferencial">
         <h2>Por que escolher nossa cafeteria?</h2>
-        <article>
-            <div>
+        <article class="diferencialCarrossel">
+            <button class="seta" onclick="voltarDiferencial()">&#10094;</button>
+            <div class="item-diferencial ativo">
                 <h4>Grãos de qualidade</h4>
-                <span>Os nossos grãos são escolhidos cuidadosamente por nossa equipe, e são preparados com todo o cuidado.</span>
+                <img src="assets/images/coffee.png" alt="café minimalista">
+                <span>Os nossos grãos são escolhidos cuidadosamente <br>por nossa equipe, e são preparados com todo o cuidado.</span>
             </div>
-            <div>
+            <div class="item-diferencial">
                 <h4>Equipe qualificada</h4>
-                <span>Nossa esquipe conta com centenas de talentos que garante o seu café quentinho e saboroso.</span>
+                <img src="assets/images/workers.png" alt="equipe de trabalho">
+                <span>Nossa esquipe conta com centenas de talentos <br>que garante o seu café quentinho e saboroso.</span>
             </div>
-            <div>
+            <div class="item-diferencial">
                 <h4>Ambiente aconchegante</h4>
-                <span>Temos um espaço confortável para conversar, estudar, trabalhar ou simplesmente relaxar.</span>
+                <img src="assets/images/place.png" alt="lugar aconchegante">
+                <span>Temos um espaço confortável para conversar, <br>estudar, trabalhar ou simplesmente relaxar.</span>
             </div>
+            <button class="seta" onclick="avancarDiferencial()">&#10095;</button>
         </article>
     </section>
 
-    <section id="depoimentos">
-        
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+
+        <article class="lista-depoimentos">
+            <div class="item-depoimento">
+                <div class="foto-cliente">MS</div>
+
+                <blockquote>
+                    “O café é maravilhoso e o ambiente é muito aconchegante.
+                    É o lugar perfeito para passar a tarde.”
+                </blockquote>
+
+                <h4>Mariana Silva</h4>
+                <span class="estrelas">★★★★★</span>
+            </div>
+
+            <div class="item-depoimento">
+                <div class="foto-cliente">LO</div>
+
+                <blockquote>
+                    “Além do atendimento excelente, os doces são deliciosos.
+                    Com certeza voltarei mais vezes.”
+                </blockquote>
+
+                <h4>Lucas Oliveira</h4>
+                <span class="estrelas">★★★★★</span>
+            </div>
+
+            <div class="item-depoimento">
+                <div class="foto-cliente">AC</div>
+
+                <blockquote>
+                    “Um ótimo lugar para conversar, estudar e aproveitar
+                    um café preparado com muito cuidado.”
+                </blockquote>
+
+                <h4>Ana Costa</h4>
+                <span class="estrelas">★★★★★</span>
+            </div>
+        </article>
     </section>
 
     <!-- GALERIA + LOCALIZAÇÃO — dono: colega 3 -->

@@ -1,0 +1,136 @@
+.diferencial {
+    background-color: var(--cookies-cream);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.diferencial h2 {
+    font-family: cambria, cursive;
+    margin-top: 3rem;
+    font-size: 2.5vw;
+}
+
+.diferencialCarrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-diferencial {
+    display: none;
+}
+
+.item-diferencial.ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+
+.item-diferencial.ativo img {
+    width: 20rem;
+}
+
+.item-diferencial h4 {
+    font-family: "Imperial Script", cursive;
+    word-spacing: 10px;
+    font-size: 4rem;
+}
+
+.item-diferencial span {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.seta {
+    border: 2px solid var(--cinnamon);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--metallic-bronze);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.seta:first-of-type {
+    left: 2%;
+}
+
+.seta:last-of-type {
+    right: 2%;
+}
+
+.seta:hover {
+    background-color: var(--cinnamon);
+    transition: 700ms;
+}
+
+.depoimentos {
+    padding: 70px 40px;
+    background-color: var(--vanilla);
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-family: Cambria, cursive;
+    font-size: 3vw;
+    margin: 0 0 60px;
+    font-size: 42px;
+}
+
+.lista-depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.item-depoimento {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    padding: 35px 25px;
+    background-color: var(--tea-green);
+    border: 2px solid #aacb9b;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.foto-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 25px;
+    border: 3px solid var(--metallic-bronze);
+    border-radius: 50%;
+    background-color: var(--cookies-cream);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.item-depoimento blockquote {
+    flex: 1;
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.item-depoimento h4 {
+    margin: 0 0 10px;
+    font-size: 21px;
+}
+
+.estrelas {
+    color: var(--metallic-bronze);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
