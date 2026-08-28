@@ -1,0 +1,148 @@
+/* SOBRE NÓS + CARDÁPIO (main section) */
+
+/* Nossa História*/
+.historia {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 96px 24px;
+    text-align: center;
+}
+
+.historia h4 {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--metallic-bronze);
+    margin-bottom: 12px;
+}
+
+.historia h2 {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--milk-chocolate);
+    margin-bottom: 24px;
+}
+
+.historia p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--milk-chocolate);
+    margin-bottom: 32px;
+}
+
+.historia a {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--cinnamon);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.historia a:hover {
+    text-decoration: underline;
+}
+
+/* Cardápio em destaque*/
+
+.cardapio {
+    position: relative;
+    padding: 96px 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cardapio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/bg-cardapio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(2px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.cardapio h4 {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--vanilla);
+    margin-bottom: 12px;
+}
+
+.cardapio h2 {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.cardapio-subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cookies-cream);
+    margin-bottom: 48px;
+}
+
+.secao-cardapio {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cardapio__grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+.card-produto {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-produto__img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-produto__nome {
+    font-size: 1.0625rem;
+    color: var(--milk-chocolate);
+}
+
+.card-produto__desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--milk-chocolate);
+    opacity: 0.85;
+}
+
+.card-produto__preco {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--metallic-bronze);
+    margin-top: auto;
+}
+
+.ver-mais-cardapio {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--vanilla);
+}
+
+.ver-mais-cardapio:hover {
+    text-decoration: underline;
+}
