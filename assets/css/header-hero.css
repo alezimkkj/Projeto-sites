@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --vanilla: #F3E5AB;
+    --cinnamon: #D2691E;
+    --milk-chocolate: #513B1C;
+    --metallic-bronze: #A97142;
+    --laurel-green: #A09A9D;
+    --tea-green: #D0F0C0;
+    --cookies-cream: #ECE0D1;
+    --white: #FFFFFF;
+
+    --radius: 12px;
+    --font-title: "Imperial Script", cursive;
+}
+
+body {
+    color: var(--milk-chocolate);
+}
+
 a {
     text-decoration: none;
     color: inherit;
